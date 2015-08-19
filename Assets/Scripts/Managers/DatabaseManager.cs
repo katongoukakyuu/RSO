@@ -53,7 +53,7 @@ public class DatabaseManager : MonoBehaviour {
 	}
 
 	private void InitializeDatabase() {
-		SaveEntry(GameManager.Instance.RegisterAccount ("test", "test@test.com"));
+		SaveEntry(GameManager.Instance.CreateAccount ("test", "test@test.com"));
 	}
 
 	public IDictionary<string,object> SaveEntry(Dictionary<string, object> dic) {

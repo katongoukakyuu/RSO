@@ -59,32 +59,29 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
- <Reference Include="ugly_net35">
- <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/ugly_net35.dll</HintPath>
- </Reference>
- <Reference Include="SQLitePCL.raw">
- <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/SQLitePCL.raw.dll</HintPath>
+ <Reference Include="Couchbase.Lite">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/Couchbase.Lite.dll</HintPath>
  </Reference>
  <Reference Include="Couchbase.Lite.Unity">
  <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/Couchbase.Lite.Unity.dll</HintPath>
  </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/Newtonsoft.Json.dll</HintPath>
+ </Reference>
  <Reference Include="Rackspace.Threading">
  <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/Rackspace.Threading.dll</HintPath>
  </Reference>
- <Reference Include="Couchbase.Lite">
- <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/Couchbase.Lite.dll</HintPath>
- </Reference>
- <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <Reference Include="SQLitePCL.raw">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/SQLitePCL.raw.dll</HintPath>
  </Reference>
  <Reference Include="System.Net.Http.Net35">
  <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/System.Net.Http.Net35.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="System.Threading.Tasks.Net35">
  <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/System.Threading.Tasks.Net35.dll</HintPath>
+ </Reference>
+ <Reference Include="ugly_net35">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/RSO/Assets/Plugins/Couchbase/ugly_net35.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
