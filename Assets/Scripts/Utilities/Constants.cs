@@ -6,7 +6,7 @@ public class Constants : MonoBehaviour {
 
 	public const string VERSION = "0.1";
 
-	public const string DB_NAME = "RSO";
+	public const string DB_NAME = "rso";
 
 	public const string SCENE_MAIN = "Main";
 
@@ -44,7 +44,6 @@ public class Constants : MonoBehaviour {
 	public const string DB_KEYWORD_TEXT = "text";
 	public const string DB_KEYWORD_FLAVOR = "flavor";
 	public const string DB_KEYWORD_SP = "sp";
-	public const string DB_KEYWORD_LEVEL = "level";
 	// end card document keywords
 
 	// character card document keywords

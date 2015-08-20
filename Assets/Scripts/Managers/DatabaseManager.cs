@@ -53,7 +53,42 @@ public class DatabaseManager : MonoBehaviour {
 	}
 
 	private void InitializeDatabase() {
-		SaveEntry(GameManager.Instance.CreateAccount ("test", "test@test.com"));
+		print(SaveEntry(GameManager.Instance.CreateAccount ("test", "test@test.com")));
+
+		// Reimu cards
+		print(SaveEntry (GameManager.Instance.CreateCharacterCard(
+			"0100",
+			"Reimu Hakurei",
+			"The Wonderful Shrine Maiden of Paradise",
+			new List<string>() {
+				"Reimu",
+				"Human",
+				"Border Manipulator"
+			},
+			19, 3, 3,
+			"<color=blue>[Battle] 2 SP</color>\n"+
+			"<color=red>One of your Spells</red> gains <color=green>Focused Movement (1)</color> until end of phase. (Once per phase)",
+			"Anyways, I have to punish you a little."
+		)));
+		print(SaveEntry(GameManager.Instance.CreateSpellCard(
+			"0101",
+			"Dream Sign \"Duplex Barrier\"",
+			new List<string>() {
+				"Reimu",
+				"Spread",
+			},
+			new List<Dictionary<string, int>>() {
+				new Dictionary<string, int>() {
+					{"Reimu", 1}
+				}
+			},
+			1, 1, 4, 1,
+			"<color=blue>[Battle/Intercept] Passive</color>\n"+
+			"<color=red>This Spell</red> gains <color=green>Protection (1)</color>.",
+			""
+		)));
+		// End Reimu cards
+
 	}
 
 	public IDictionary<string,object> SaveEntry(Dictionary<string, object> dic) {

@@ -40,19 +40,43 @@ public class GameManager : MonoBehaviour {
 		return d;
 	}
 
-	public Dictionary<string, object> CreateCharacterCard(string name, string title,
+	public Dictionary<string, object> CreateCharacterCard(string id, string name, string title,
 	                                                      List<string> designations,
 	                                                      int hp, int ev, int bv,
 	                                                      string text, string flavor) {
 		Dictionary<string, object> d = new Dictionary<string, object> () {
 			{Constants.DB_KEYWORD_TYPE, Constants.DB_TYPE_CARD},
 			{Constants.DB_KEYWORD_SUBTYPE, Constants.DB_TYPE_CARD_CHARACTER},
+			{Constants.DB_KEYWORD_ID, id},
 			{Constants.DB_KEYWORD_NAME, name},
 			{Constants.DB_KEYWORD_TITLE, title},
 			{Constants.DB_KEYWORD_DESIGNATIONS, designations},
 			{Constants.DB_KEYWORD_HP, hp},
 			{Constants.DB_KEYWORD_EV, ev},
 			{Constants.DB_KEYWORD_BV, bv},
+			{Constants.DB_KEYWORD_TEXT, text},
+			{Constants.DB_KEYWORD_FLAVOR, flavor},
+			{Constants.VERSION, Constants.VERSION},
+			{Constants.DB_KEYWORD_CREATED_AT, System.DateTime.Now.ToUniversalTime().ToString ()}
+		};
+		return d;
+	}
+
+	public Dictionary<string, object> CreateSpellCard(string id, string name,
+	                                                  List<string> designations, List<Dictionary<string, int>> requirements,
+                                                      int av, int iv, int hv, int sp,
+                                                      string text, string flavor) {
+		Dictionary<string, object> d = new Dictionary<string, object> () {
+			{Constants.DB_KEYWORD_TYPE, Constants.DB_TYPE_CARD},
+			{Constants.DB_KEYWORD_SUBTYPE, Constants.DB_TYPE_CARD_SPELL},
+			{Constants.DB_KEYWORD_ID, id},
+			{Constants.DB_KEYWORD_NAME, name},
+			{Constants.DB_KEYWORD_DESIGNATIONS, designations},
+			{Constants.DB_KEYWORD_REQUIREMENTS, requirements},
+			{Constants.DB_KEYWORD_AV, av},
+			{Constants.DB_KEYWORD_IV, iv},
+			{Constants.DB_KEYWORD_HV, hv},
+			{Constants.DB_KEYWORD_SP, sp},
 			{Constants.DB_KEYWORD_TEXT, text},
 			{Constants.DB_KEYWORD_FLAVOR, flavor},
 			{Constants.VERSION, Constants.VERSION},
